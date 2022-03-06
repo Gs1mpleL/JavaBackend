@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6新特性学习</title>
+</head>
+<body>
+<script>
+    for(var i = 0;i<5;i++){
+        console.log(i);
+    }
+    console.log("在循环外还是能读取到var i = " + i);
+    // let会限定作用域
+    for(let j = 0;j<5;j++){
+        console.log(j);
+    }
+    console.log("在循环外还是不能读取到let j = " + j);
+
+    // 不能修改 相当于final
+    const k = 0;
+
+    // 字符串方法
+    let str1 = "hello wanfeng";
+    str.includes("wanfeng");
+    str.startsWith("hello");
+    str.endsWith("wanfeng");
+
+    // 字符串模板 `中间的都属于一个字符串`
+    let str2 = `
+    a
+    b
+    c
+    d
+    e
+    f
+    `
+
+    // 解构表达式
+    let arr1 = [1,2,3];
+    // 直接对应x,y,z
+    let [x,y,z] = arr1;
+    const person = {
+        name:"jack",
+        age:"12"
+    };
+    // 对象解构 可以：命名
+    let {name:n,age:a} = person;
+
+    // 参数默认值优化 没有值的时候默认为1
+    let b = b || 1;
+
+
+    // 普通写法
+    function print1(a){
+        console.log(a);
+    }
+    // 箭头函数
+    let print2 = a => console.log(a);
+
+
+    let arr2 = [1,2,3];
+    // 拓展数组 ，自动展开
+    console.log(...arr2);
+
+
+    // 异步
+    const p = new Promise(((resolve, reject) => {
+        // 写ajax操作
+        setTimeout(()=>{
+            // 异步操作
+            let number = Math.random();
+            if(number<0.5){
+                // 成功了
+                resolve("成功了" + number);
+            }else{
+                // 失败了
+                reject("失败了" + number);
+            }
+        }).then(value =>{
+            console.log(value);
+        }).locale(value => {
+            console.log(value);
+        })
+    }))
+
+
+
+
+</script>
+</body>
+</html>
