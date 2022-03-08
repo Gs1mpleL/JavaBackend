@@ -1,6 +1,0 @@
-server:
-  address:
-
-test-properties:
-  name: "测试小哥"
-  age: "12"
