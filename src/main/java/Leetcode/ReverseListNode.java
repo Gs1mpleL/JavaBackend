@@ -1,6 +1,9 @@
 package Leetcode;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * 反转链表的两种方法
