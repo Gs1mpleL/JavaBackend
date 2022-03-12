@@ -90,6 +90,5 @@ class GuardedObject{
             this.response = response;
             this.notifyAll();
         }
-
     }
 }
