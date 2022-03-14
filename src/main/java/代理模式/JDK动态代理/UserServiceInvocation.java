@@ -1,4 +1,6 @@
-package 代理模式;
+package 代理模式.JDK动态代理;
+
+import 代理模式.案例.UserService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

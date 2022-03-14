@@ -1,4 +1,7 @@
-package 代理模式;
+package 代理模式.静态代理;
+
+import 代理模式.案例.UserService;
+import 代理模式.案例.UserServiceImpl;
 
 /**
  * 静态代理
@@ -6,7 +9,7 @@ package 代理模式;
  * @create 2022/3/14 10:47
  * @package 代理模式
  */
-public class StaticProxyDome implements UserService{
+public class StaticProxyDome implements UserService {
     // 代理对象内部需要有代理接口的对象
     private final UserService userService;
     // 构造时传入需要的实现类
