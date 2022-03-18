@@ -6,5 +6,6 @@ package Spring.Bean的理解;
  * @package Spring
  */
 public interface UserDao {
+    String name = null;
     public void update();
 }
