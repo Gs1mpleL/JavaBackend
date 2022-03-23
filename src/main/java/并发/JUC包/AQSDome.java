@@ -40,6 +40,8 @@ public class AQSDome {
             }
         }).start();
     }
+
+    ReentrantLock reentrantLock = new ReentrantLock();
 }
 
 
